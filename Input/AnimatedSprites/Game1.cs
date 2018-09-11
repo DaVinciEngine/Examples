@@ -150,8 +150,8 @@ namespace AnimatedSprites
                 ringsPosition.Y = 0;
             if (ringsPosition.X > Window.ClientBounds.Width - ringsFrameSize.X)
                 ringsPosition.X = Window.ClientBounds.Width - ringsFrameSize.X;
-            if (ringsPosition.Y > Window.ClientBounds.Width - ringsFrameSize.Y)
-                ringsPosition.Y = Window.ClientBounds.Width - ringsFrameSize.Y;
+            if (ringsPosition.Y > Window.ClientBounds.Height - ringsFrameSize.Y)
+                ringsPosition.Y = Window.ClientBounds.Height - ringsFrameSize.Y;
 
             base.Update(gameTime);
         }
